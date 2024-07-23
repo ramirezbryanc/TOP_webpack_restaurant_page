@@ -1,9 +1,11 @@
+import brand from './../nigiri-sumi-high-resolution-logo-white-transparent.svg';
+
 export default function home() {
     const content = document.createElement('div');
     content.classList.add("home");
 
     const tagline = document.createElement('p');
-    tagline.textContent = 'The best sushi experience in the country';
+    tagline.textContent = 'Authentic Sushi Experience';
     tagline.classList.add("tagline");
     content.appendChild(tagline);
 
@@ -12,8 +14,10 @@ export default function home() {
     est.classList.add("tagline");
     content.appendChild(est);
 
-    const image = document.createElement('img');
-    image.src = 'https://placedog.net/300/300';
+    const image = new Image();
+    image.width = 350;
+    image.height = 350;
+    image.src = brand;
     image.id = 'home-img';
     content.appendChild(image);
 
