@@ -71,10 +71,14 @@ content.appendChild(homePage());
 function footer() {
     const footer = document.createElement('div');
     footer.classList.add('footer');
-    const text = document.createElement('p');
-    text.textContent = "Copyright © ramirezbryanc";
-    text.classList.add('footer-text');
-    footer.appendChild(text);
+    const text1 = document.createElement('p');
+    text1.textContent = "Copyright © ramirezbryanc";
+    text1.classList.add('footer-text');
+    const text2 = document.createElement('p');
+    text2.textContent = "Note: This is a fictional sushi restaurant."
+    text2.classList.add('footer-text');
+    footer.appendChild(text2);
+    footer.appendChild(text1);
     return footer;
 }
 
